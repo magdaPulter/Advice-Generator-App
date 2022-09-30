@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;500&family=Lato:wght@300&family=Manrope:wght@600;700;800&family=Open+Sans:wght@300&family=Overpass&family=Poppins:ital,wght@0,400;1,200&family=Roboto:ital,wght@0,400;0,700;1,300&display=swap');
+:root{
+    --light-cyan: hsl(193, 38%, 86%);
+    --neon-green: hsl(150, 100%, 66%);
+    --grayish-blue: hsl(217, 19%, 38%);
+    --dark-grayish-blue: hsl(217, 19%, 24%);
+    --dark-blue: hsl(218, 23%, 16%);
+
+}
+
+body{
+    background-color: var(--dark-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Manrope;
+}
+
+.main-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-container{
+    background-color: var(--dark-grayish-blue);
+    width: 444px;
+    height: 250px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+h5{
+    color: var(--neon-green);
+    text-align: center;
+}
+
+p{
+    color: var(--light-cyan);
+    text-align: center;
+    height: 45%;
+    font-size: 26px;
+}
+
+
+.btn{
+    background-color: var(--neon-green);
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -30px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn:hover{
+    color: rgba(255,255,255,1);
+    box-shadow: 0 0px 20px rgba(82, 255, 168, 4);
+}
+
+#button-dice{
+    width: 20px;
+    height: 20px;
+}
+
+.divider-mobile{
+    display: none;
+}
+
+.divider{
+    display: block;
+}
+
+@media(max-width: 414px){
+    .divider-mobile{
+        display: block;
+    }
+    .divider{
+        display: none;
+    }
+    p{
+        font-size: 22px;
+    }
+    .content-container{
+        width: 295px;
+        height: 250px;
+    }
+}
